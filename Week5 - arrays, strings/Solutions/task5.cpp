@@ -1,11 +1,4 @@
 #include <iostream>
-#include <cmath>
-
-double myRound(double number, int precision)
-{
-    double t = pow(10, precision);
-    return round(number * t) / t; 
-}
 
 using namespace std;
 
@@ -38,5 +31,5 @@ void solution()
 
 int main()
 {
-    cout << myRound(3.12345678, 3);
+    solution();
 }
