@@ -19,7 +19,7 @@ bool isArrayPalindrome(const int arr[], int size)
     
     Alternatively:
 
-    for (int i = 0; i < size; i++)
+    for (int i = 0; i < size / 2; i++)
         if (arr[i] != arr[size - 1 - i])
             return false;
 
