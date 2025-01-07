@@ -15,7 +15,7 @@
 > Тези задачи са основни, защото се намират в стандартната библиотека на С, както и в C++ библиотеката `<cstring>`
 >- ``strlen(const char* str)``  
 >- ``strcpy(char* destination, const char* source)``  
->- ``strcat(char* left, const char* right)``
+>- ``strcat(char* destination, const char* source)``
 
 </details>
 
