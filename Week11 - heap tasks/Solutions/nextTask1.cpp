@@ -9,7 +9,7 @@ void stringResize(char*& str, int newSize, char fill = '\0')
     }
     result[newSize] = '\0';
 
-    for (int i = 0; str[i] != '\0'; i++)
+    for (int i = 0; str[i] != '\0' && i < newSize; i++)
     {
         result[i] = str[i];
     }
