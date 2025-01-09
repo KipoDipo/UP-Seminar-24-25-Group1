@@ -53,7 +53,7 @@ void deleteCanvas(char** canvas, int rows)
 Нека направим и функция за принтиране на платното.
 
 ```cpp
-void displayCanvas(const char** canvas, int rows, int cols)
+void displayCanvas(char** canvas, int rows, int cols)
 {
     for (int i = 0; i < rows; i++)
     {
@@ -106,7 +106,7 @@ char** resizeCanvas(char** canvas, int& rows, int& cols, int newRows, int newCol
     // това го правим за да ограничим копирането, в случай че новият размер е по-малък
     // в противен случай ще излезем извън границите на матрицата `newCanvas`
     int rowsToCopy = (rows > newRows) ? newRows : rows;
-    int colsToCopy = (cows > newCols) ? newCols : cols;
+    int colsToCopy = (cols > newCols) ? newCols : cols;
 
     // Копиране на съществуващите пиксели
     for (int i = 0; i < rowsToCopy; i++) 

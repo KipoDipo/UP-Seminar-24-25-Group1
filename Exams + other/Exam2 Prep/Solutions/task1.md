@@ -72,8 +72,8 @@ int* getTopNResults(const int* scoreboard, int size, int N)
 
     /// ===== 1) =====
 
-    result[0] = scoreboard[0]; // предполагаме, че първият елемент е най-голям
-    for (int j = 1; j < size; j++)
+    result[0] = INT_MIN; // със сигурност ще намерим число, по-голямо от това
+    for (int j = 0; j < size; j++)
     {
         if (scoreboard[j] > result[0])
         {
@@ -85,8 +85,8 @@ int* getTopNResults(const int* scoreboard, int size, int N)
 
     for (int i = 1; i < N; i++)
     {
-        result[i] = scoreboard[0]; // предполагаме, че първият елемент е най-голям
-        for (int j = 1; j < size; j++)
+        result[i] = INT_MIN;
+        for (int j = 0; j < size; j++)
         {
             // текущото число трябва да е едновременно по-голямо от най-голямото намерено до сега
             // но също така и по-малко от най-голямото намерено на предишната стъпка
